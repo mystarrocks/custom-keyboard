@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtAlice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:alpha="1"
+        android:padding="10dp"
+        android:text="@string/perhaps_it_doesn_t_understand_english_thought_alice_i_daresay_it_s_a_french_mouse_come_over_with_william_the_conqueror_for_with_all_her_knowledge_of_history_alice_had_no_very_clear_notion_how_long_ago_anything_had_happened_so_she_began_again_ou_est_ma_chatte_which_was_the_first_sentence_in_her_french_lesson_book_the_mouse_gave_a_sudden_leap_out_of_the_water_and_seemed_to_quiver_all_over_with_fright_oh_i_beg_your_pardon_cried_alice_hastily_afraid_that_she_had_hurt_the_poor_animal_s_feelings_i_quite_forgot_you_didn_t_like_cats"
+        android:textColor="#CA2525"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/type_the_above_text_and_press_enter"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="aaa" />
+</LinearLayout>
