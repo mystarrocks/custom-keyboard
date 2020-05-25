@@ -25,18 +25,18 @@ public class MainActivity extends AppCompatActivity {
                    //Could be combined with timestamp but again
                    public void afterTextChanged(Editable s)
                    {   long millis=System.currentTimeMillis();
-                       Log.d("afterTextChanged", String.valueOf(millis) + "\t" + s.toString());
+                       Log.d("MainActivity | afterTextChanged", String.valueOf(millis) + "\t" + s.toString());
                    }
                    public void beforeTextChanged(CharSequence s, int start, int count, int after)
                    {
                        long millis=System.currentTimeMillis();
                        /*This method is called to notify you that, within s, the count characters beginning at start are about to be replaced by new text with length after. It is an error to attempt to make changes to s from this callback.*/
-                       Log.d("beforeTextChanged", String.valueOf(millis) + "\t" + s.toString());
+                       Log.d("MainActivity | beforeTextChanged", String.valueOf(millis) + "\t" + s.toString());
                    }
                    public void onTextChanged(CharSequence s, int start, int before, int count)
                    {
                        long millis=System.currentTimeMillis();
-                       Log.d("onTextChanged", String.valueOf(millis) + "\t" + s.toString());
+                       Log.d("MainActivity | onTextChanged", String.valueOf(millis) + "\t" + s.toString());
                    };
                 });
 
@@ -49,12 +49,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     //keydown down
-                    Log.d("KeyDown", String.valueOf(millis));
+                    Log.d("MainActivity | KeyDown", String.valueOf(millis));
                 }
 
                 if ( event.getAction() == KeyEvent.ACTION_UP) {
                     //key up.
-                    Log.d("KeyUp", String.valueOf(millis));
+                    Log.d("MainActivity | KeyUp", String.valueOf(millis));
                 }
 
                 return false;
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         long millis=System.currentTimeMillis();
         java.util.Date date = new java.util.Date(millis);
 
-        Log.d("onKeyDown KEYCODE_any", String.valueOf(keyCode));
+        Log.d("MainActivity | onKeyDown KEYCODE_any", String.valueOf(keyCode));
         return super.onKeyDown(keyCode, event);
     }
 
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         switch (keyCode) {
             default:
-                Log.d("onKeyUp KEYCODE_any", String.valueOf(keyCode));
+                Log.d("MainActivity | onKeyUp KEYCODE_any", String.valueOf(keyCode));
                 return super.onKeyUp(keyCode, event);
         }
     }

@@ -27,7 +27,7 @@ public class MyKeyboard extends InputMethodService
         keyboard = new Keyboard(this, R.xml.qwerty);
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
-        Log.d("TAG", "Keyboard initialized");
+        Log.d("MainActivity | TAG", "Keyboard initialized");
         return kv;
     }
 
@@ -56,7 +56,7 @@ public class MyKeyboard extends InputMethodService
 
         long millis=System.currentTimeMillis();
         java.util.Date date=new java.util.Date(millis);
-        Log.d("OnPress", String.valueOf(millis));
+        Log.d("MainActivity | OnPress", String.valueOf(millis));
 
     }
 
